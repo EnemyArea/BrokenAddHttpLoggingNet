@@ -19,7 +19,7 @@ namespace AddHttpLoggingNet7.Controllers
         }
 
         [Route("bydate")]
-        [HttpGet]
+        [HttpPost]
         public IEnumerable<WeatherForecast> GetWeatherForecastForDate([FromForm] WeatherForecastRequest request)
         {
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
